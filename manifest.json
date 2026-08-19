@@ -1,0 +1,21 @@
+{
+  "name": " Landkreis Moswald Companion",
+  "short_name": "LM",
+  "description": "Offizielle Companion App für Landkreis Moswald. Server-Status, Keymaster Keys & Live Connect.",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#030406",
+  "theme_color": "#8b5cf6",
+  "icons": [
+    {
+      "src": "assets/logo.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "assets/logo.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ]
+}

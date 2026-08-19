@@ -1,0 +1,12 @@
+[
+  {
+    "txId": "TX-V3-1784468916915-69",
+    "scriptName": "Custom Standalone Test Item",
+    "price": "14.99 €",
+    "key": "LAV3-GATEWAY-11FD-FDB3",
+    "method": "Standalone Custom Gateway",
+    "maskedCard": "5678",
+    "timestamp": "2026-07-19T13:48:36.916Z",
+    "clientIpHash": "12ca17b49af22894"
+  }
+]

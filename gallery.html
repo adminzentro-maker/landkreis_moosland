@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie | Landkreis Moswald</title>
+    <meta name="description" content="Schau dir die neuesten Screenshots und Eindrücke von Landkreis Moswald an. Erlebe das visuelle RP auf unserem FiveM Server.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=36">
+</head>
+<body>
+    <!-- Global Animated Mesh Glow Background -->
+    <div class="global-bg-glow">
+        <div class="glow-orb-1"></div>
+        <div class="glow-orb-2"></div>
+    </div>
+
+    
+    </div>
+
+
+    <!-- Header Navigation -->
+    <header class="navbar" id="main-nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo-area">
+                <img src="assets/logo.jpg?v=36" alt="LA Life Logo" class="nav-logo-full">
+            </a>
+            <nav class="nav-menu" id="nav-menu">
+                <div class="nav-menu-glow-orb"></div>
+                <div class="nav-menu-header">
+                    <button class="nav-close-btn" id="nav-menu-close-btn" onclick="toggleNavMenu(event)">&times;</button>
+                    <img src="assets/gallery_tuner.jpg" alt="GTA V Los Angeles" class="nav-menu-img">
+                    <div class="nav-menu-img-overlay"></div>
+                </div>
+                <div class="nav-menu-links">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="features.html" class="nav-link">Features</a>
+                    <a href="join.html" class="nav-link">Beitreten</a>
+                    <a href="team.html" class="nav-link">Team</a>
+                    <a href="rules.html" class="nav-link">Regeln</a>
+                    <a href="gallery.html" class="nav-link active">Galerie</a>
+                    <a href="status.html" class="nav-link">Status</a>
+                </div>
+                <div class="nav-menu-footer">
+                    <a href="https://discord.com/invite/los-angeles-rp-v3" target="_blank" class="nav-btn-discord-blue">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.094 13.094 0 0 1-1.873-.894.077.077 0 0 1-.008-.128c.126-.093.252-.19.372-.287a.075.075 0 0 1 .077-.011c3.92 1.793 8.18 1.793 12.061 0a.073.073 0 0 1 .078.009c.12.099.246.195.373.289a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.894.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.156-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.156 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.156-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.156 2.418z"/>
+                        </svg>
+                        <span>Discord Server</span>
+                    </a>
+                </div>
+            </nav>
+            
+            <button id="theme-toggle-btn" class="theme-toggle-btn" aria-label="Design-Modus wechseln" title="Hell/Dunkel Modus">
+                <span class="theme-icon-sun">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </span>
+                <span class="theme-icon-moon" style="display: none;">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </span>
+            </button>
+
+            <div class="nav-toggle" id="nav-toggle" onclick="toggleNavMenu(event)">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Subpage Hero -->
+    <section class="subpage-hero">
+        <h1 class="subpage-title reveal-item">Server <span class="gradient-text">Galerie</span></h1>
+        <p class="subpage-subtitle reveal-item">Ein paar filmreife Eindrücke aus dem Alltag auf Landkreis Moswald.</p>
+    </section>
+
+    <!-- Gallery Grid Section -->
+    <section class="section-container">
+        <div class="gallery-grid">
+            <!-- Gallery Item 1 -->
+            <div class="gallery-item reveal-item">
+                <img src="assets/gallery_pd.jpg" alt="LSPD Streife im Einsatz">
+                <div class="gallery-overlay">
+                    <div class="gallery-info">
+                        <h3>LSPD Streife im Einsatz</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gallery Item 2 -->
+            <div class="gallery-item reveal-item">
+                <img src="assets/gallery_tuner.jpg" alt="Custom Tuning-Treffen am Venice Beach">
+                <div class="gallery-overlay">
+                    <div class="gallery-info">
+                        <h3>Tuning-Treffen am Venice Beach</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gallery Item 3 -->
+            <div class="gallery-item reveal-item">
+                <img src="assets/gallery_ems.jpg" alt="EMS Notfalleinsatz mit Helikopter">
+                <div class="gallery-overlay">
+                    <div class="gallery-info">
+                        <h3>EMS Helikopter-Rettung</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="index.html" class="logo-area">
+                    <img src="assets/logo.jpg?v=36" alt="LA Life Logo" class="nav-logo-full">
+                </a>
+                <p>Das Premium-Life Experience-Erlebnis auf FiveM. Gestalte dein eigenes Schicksal in den Straßen von Los Angeles.</p>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Navigation</h4>
+                <a href="index.html">Home</a>
+                <a href="features.html">Features</a>
+                <a href="join.html">Beitreten</a>
+                <a href="team.html">Team</a>
+                <a href="rules.html">Regeln</a>
+                <a href="gallery.html">Galerie</a>
+                <a href="status.html">Status</a>
+            </div>
+
+            <div class="footer-socials">
+                <h4>Socials & Community</h4>
+                <div class="footer-channel-list">
+                    <a href="https://discord.com/invite/los-angeles-rp-v3" target="_blank" class="footer-channel-link channel-discord">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.094 13.094 0 0 1-1.873-.894.077.077 0 0 1-.008-.128c.126-.093.252-.19.372-.287a.075.075 0 0 1 .077-.011c3.92 1.793 8.18 1.793 12.061 0a.073.073 0 0 1 .078.009c.12.099.246.195.373.289a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.894.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.156-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.156 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.156-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.156 2.418z"/></svg>
+                        <span>Discord Server</span>
+                    </a>
+                    <a href="https://www.youtube.com/@losangeles-rp-v3" target="_blank" class="footer-channel-link channel-youtube">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        <span>YouTube Kanal</span>
+                    </a>
+                    <a href="https://www.tiktok.com/@losangeles-rp-v3" target="_blank" class="footer-channel-link channel-tiktok">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12.525 0h3.08c.12 1.38.64 2.68 1.5 3.73.96 1.18 2.34 1.95 3.895 2.14V8.98c-1.89-.04-3.64-.67-5.08-1.77v8.08c0 4.14-3.36 7.5-7.5 7.5S1 19.43 1 15.29c0-4.14 3.36-7.5 7.5-7.5.47 0 .93.04 1.38.13v3.25c-.44-.13-.91-.2-1.38-.2-2.35 0-4.25 1.9-4.25 4.25s1.9 4.25 4.25 4.25 4.25-1.9 4.25-4.25V0z"/></svg>
+                        <span>TikTok Account</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Landkreis Moswald. Diese Website steht in keiner Verbindung mit Rockstar Games oder Take-Two Interactive.</p>
+        </div>
+    </footer>
+
+    <script src="app.js?v=36"></script>
+
+    <!-- Floating Background Music Player -->
+    <div id="audio-player" class="audio-player">
+        <audio id="bg-music" preload="none" src="https://p.scdn.co/mp3-preview/101125a3f0f2dec1f437a8e92b95a515b85a3f8d" loop></audio>
+        <button id="music-toggle-btn" class="music-btn" aria-label="Musik abspielen">
+            <span class="music-icon-play">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M8 5v14l11-7z"/>
+                </svg>
+            </span>
+            <span class="music-icon-pause" style="display: none;">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+                </svg>
+            </span>
+        </button>
+        <div class="music-info">
+            <span class="music-title">PRECEDE - Warum</span>
+            <div class="music-equalizer">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
